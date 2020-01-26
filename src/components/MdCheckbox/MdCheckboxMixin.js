@@ -10,6 +10,7 @@ export default {
       type: [String, Boolean, Object, Number],
     },
     name: [String, Number],
+    checked: Boolean,
     required: Boolean,
     disabled: Boolean,
     indeterminate: Boolean,
@@ -32,6 +33,7 @@ export default {
       const attrs = {
         id: this.id,
         name: this.name,
+        checked: this.checked,
         disabled: this.disabled,
         required: this.required,
         'true-value': this.trueValue,
